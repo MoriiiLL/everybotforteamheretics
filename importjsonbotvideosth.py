@@ -13,7 +13,7 @@ if os.path.exists(SEEN_FILE):
     for e in reversed(entries):
         if e.yt_videoid not in seen:
             requests.post(WEBHOOK, json={
-                "content": f"🎬 Nuevo video de Team Heretics Brawl Stars:\n{e.link}"
+                "content": f"🎬 **NUEVO VIDEO DE HERETICS** 🎬\n{e.link}"
             })
             seen.add(e.yt_videoid)
 else:
